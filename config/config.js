@@ -7,12 +7,30 @@ export default {
     ],
     routes: [{
         path: '/',
-        component: './HelloWorld'
+        component: '../layout',
+        routes: [{
+            path:'/',
+            component: './HelloWorld'
+        },{
+            path:'helloworld',
+            component: './HelloWorld'
+        },{
+            path: '/tree',
+            component: 'tree/tree.js'
+        },{
+            path: '/card',
+            component: 'card/card.js'
+        },{
+            path: '/dashboard',
+            routes: [
+                {path: '/dashboard/analysis', component: 'Dashboard/Analysis'},
+                {path: '/dashboard/monitor', component: 'Dashboard/Monitor'},
+                {path: '/dashboard/workplace', component: 'Dashboard/Workplace'}
+            ]
+        }
+    ]
     },{
         path: '/foo',
         component: './tabs'
-    },{
-        path: '/tree',
-        component: './tree.js'
     }],
 };

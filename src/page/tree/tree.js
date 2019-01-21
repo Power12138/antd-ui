@@ -1,5 +1,5 @@
 import React from 'react';
-import MyTree from './tree/MyTree';
+import MyTree from './MyTree';
 
 export default () => {
     return (
