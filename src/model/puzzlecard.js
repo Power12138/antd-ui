@@ -15,7 +15,8 @@ export default {
   effects: {
     *queryInitCards(_, sagaEffects) {
       const { call, put } = sagaEffects;
-      const endPointURI = '/dev/error';
+//      const endPointURI = '/dev/error';
+      const endPointURI = '/dev/random_joke';
 
       try {
           const puzzle = yield call(request,endPointURI);

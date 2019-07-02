@@ -25,4 +25,8 @@ export default {
             res.json(responseObj);
         },3000);
     },
+    'get /dev/error': function(req, res) {
+        res.status(500);
+        res.json({});
+    },
 };

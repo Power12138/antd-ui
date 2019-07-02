@@ -21,7 +21,8 @@ export default {
         },{
             path: '/card',
             component: 'card/card.js'
-        },{
+        },
+        {
             path: '/dashboard',
             routes: [
                 {path: '/dashboard/analysis', component: 'Dashboard/Analysis'},
@@ -31,6 +32,9 @@ export default {
         },{
             path: '/puzzlecard',
             component: './puzzlecard'
+        },{
+            path: '/list',
+            component: 'list/index.js'
         }
     ]
     },{
