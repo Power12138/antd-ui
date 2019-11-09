@@ -33,6 +33,9 @@ export default {
             path: '/puzzlecard',
             component: './puzzlecard'
         },{
+            path: '/puzzlecards',
+            component: 'puzzlecard/puzzlecards.js'
+        },{
             path: '/list',
             component: 'list/index.js'
         }
